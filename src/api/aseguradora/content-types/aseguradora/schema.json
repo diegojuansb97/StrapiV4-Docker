@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aseguradoras",
+  "info": {
+    "singularName": "aseguradora",
+    "pluralName": "aseguradoras",
+    "displayName": "aseguradora",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
